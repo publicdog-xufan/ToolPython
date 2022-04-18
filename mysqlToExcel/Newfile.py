@@ -54,7 +54,7 @@ class ReconciliationDocument(object):
         # loc标识插入新列的位置， column为列名 value 为值
         data.insert(loc=1, column="Permission List", value="ReadAccountAvailability|ReadAccountBalance"
                                                            "|ReadAccountStatus|ReadAccountTransaction")
-        # 默认直接在抹灰添加一列
+        # 默认直接在末尾添加一列
         # data["Permission List"] = "ReadAccountAvailability|ReadAccountBalance|ReadAccountStatus
         # |ReadAccountTransaction"
         conn.close()
